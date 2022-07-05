@@ -1,8 +1,8 @@
+# The 100 Prisoners Riddle
+
 <p align="center">
 <img width="400" height="400" src="https://upload.wikimedia.org/wikipedia/commons/0/05/100_prisoners_problem_qtl1.svg" alt="Banner">
 </p>
-
-# The 100 Prisoners Riddle
 
 Very small experimental repository for the 100 Prisoners Riddle
 
