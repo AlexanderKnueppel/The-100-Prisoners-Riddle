@@ -15,6 +15,24 @@
 import random
 import matplotlib.pyplot as plt
 
+def RandomStrategy(N,P):
+    failures = 0 
+
+    for n in range(N):
+        drawers = random.sample(range(P), P)
+        success = True
+        
+        for i in range(P):
+            open = random.sample(range(P), int(P/2)) # open 50% of them
+
+            if i not in [drawers[j] for j in open]:
+                success = False
+                break
+        if not success:
+            failures += 1
+    return float(1-failures/N)
+
+
 def OptimalStrategy(N, P):
     failures = 0
 
@@ -40,13 +58,13 @@ def OptimalStrategy(N, P):
                 idx += 1
     return float(1-failures/N)
 
-P = 100 # Number of prisoners
+P = 10 # Number of prisoners
 
 D = [2**x for x in range(15)]
 H = []
 
 for d in D:
-    H.append(OptimalStrategy(d, P))
+    H.append(RandomStrategy(d, P))
 
 print(H)
 index = range(len(D))
