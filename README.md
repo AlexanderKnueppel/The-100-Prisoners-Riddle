@@ -25,3 +25,12 @@ Fascinating :) A bar plot of the results:
 </p>
 
 With higher number of tries, the success rate is constantly over 30%.
+
+## Comparison with Random Strategy
+For benchmarking, I've implemented a random strategy, where each prisoner simply opens 50% of the boxes randomly... These are results for only a total of 10 (!!) prisoners. A total of 20 prisoners and beyond reduces the success rate essentially to non-existing.
+
+<p align="center">
+<img width="600" src="https://user-images.githubusercontent.com/263321/177512030-c6f72fb2-8b7c-41e0-8013-c8833a21674e.png" alt="Histogram">
+</p>
+
+
